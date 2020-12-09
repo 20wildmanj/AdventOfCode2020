@@ -9,6 +9,7 @@ def dfs_helper(graph, mark, start, target):
         if vert not in mark and dfs_helper(graph,mark,vert,target):
             return True
     return False
+
 def count(graph, start):
 
     if (len(graph[start]) == 0):
